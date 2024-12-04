@@ -9,7 +9,9 @@ function adicionarTarefas() {
         alert("Digite alguma tarefa!");
         return false;
     }else {
-        console.log(inputElement.value);
+        let novaTarefa = inputElement.value;
+        tarefas.push(novaTarefa);
+        inputElement.value = '';
     }
 }
 
